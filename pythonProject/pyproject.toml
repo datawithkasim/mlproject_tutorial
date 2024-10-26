@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml-tutorial"
+version = "0.0.1"
+description = "A machine learning tutorial project"
+authors = [
+    { name = "Kasim Ali", email = "ilovesqlpython@gmail.com" }
+]
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "seaborn"
+]
+
+[tool.setuptools.packages.find]
+# Automatically find all packages
+include = ["*"]
